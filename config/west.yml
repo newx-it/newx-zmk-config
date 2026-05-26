@@ -16,6 +16,10 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: quark-works
       url-base: https://github.com/quark-works
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
   projects:
     - name: zmk
       remote: zmk
@@ -48,5 +52,17 @@ manifest:
     - name: palindrome-zmk-config
       remote: newx-it
       revision: main
+    - name: zmk-feature-split-esb
+      remote: badjeff
+      revision: main
+    - name: sdk-nrf
+      remote: badjeff
+      revision: v3.1-branch+zmk-fixes
+      path: nrf
+    - name: nrfxlib
+      remote: nrfconnect
+      revision: v3.1-branch
+      repo-path: sdk-nrfxlib
+      path: nrfxlib
   self:
     path: config
