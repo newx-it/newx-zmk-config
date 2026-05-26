@@ -73,20 +73,10 @@
 ---
 include:
  - board: xiao_ble//zmk
-   shield: pueo_dongle prospector_adapter
-   cmake-args: -DCONFIG_ZMK_STUDIO=y
- - board: xiao_ble//zmk
    shield: palindrome_dongle
-   cmake-args: -DCONFIG_ZMK_STUDIO=n
  - board: palindrome_left
    snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_STUDIO=n
+   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
  - board: palindrome_right
    snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_STUDIO=n
- - board: palindrome_left
-   shield: settings_reset
-   artifact-name: palindrome_left_settings_reset
- - board: palindrome_right
-   shield: settings_reset
-   artifact-name: palindrome_right_settings_reset
+   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
