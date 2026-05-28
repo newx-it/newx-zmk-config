@@ -8,9 +8,9 @@ behaviors { // -----------------------------------------------------------------
 
 keymap { compatible = "zmk,keymap";
 		zero 	{ display-name = "base"; // -------------------
-			bindings = < &tabmt 0 TAB  	&mage_a 		&mage_e  	&kp C  			&kp G 					&kp K 	&kp T 		&kp H 	&kp S		&tabmt 0 TAB
-                         &mage_i  		&mage_o_tap 0 0 &u_tap 0 U 	&mage_tap 0 0  	&kp W 					&kp M  	&kp D  		&kp L   &kp F   	&kp N 
-						 &y_tap 0 Y 	&sk LGUI		&none  		&sk LCTRL  		&lt 2 SPACE 			&lt 1 R &sk RCTRL 	&none 	&sk RGUI	&kp B >;
+			bindings = < &tabmt 0 TAB  	&mage_a 		&mage_e  	&kp C  			&kp G 					&kp K 	&kp T 		&kp H 		&kp S		&tabmt 0 TAB
+                         &mage_i  		&mage_o_tap 0 0 &u_tap 0 U 	&mage_tap 0 0  	&kp W 					&kp M  	&kp D  		&kp L   	&kp F   	&kp N 
+						 &y_tap 0 Y 	&sk LGUI		&sk LALT  	&sk LCTRL  		&lt 2 SPACE 			&lt 1 R &sk RCTRL 	&sk LALT	&sk RGUI	&kp B >;
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		one 	{ display-name = "sym"; // --------------------
 			bindings = < &tabmt 0 TAB 		&amt LS(N7) N3 		&amt EQUAL N2 		&amt SEMI N1 			&amt BSLH FSLH 					&amt PIPE GRAVE &amt COLON N5 		&amt LS(N8) N6 			&amt LS(N1) N7 			&tabmt 0 TAB
@@ -28,8 +28,8 @@ keymap { compatible = "zmk,keymap";
                          &none 	&none 	&none 	&none 	&kp F11 &kp F12	&none 	&none 	&none 	&none >;
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		four 	{ display-name = "qwer"; // ----------------------
-			bindings = < &kp TAB 	&kp W 	&kp E 	&kp R 		&kp T 						&none &none &none &none &none 
-                     	 &kp LCTRL 	&kp Q 	&kp S 	&kp E 		&gameXmt K G 				&none &none &none &none &none 
+			bindings = < &kp F	 	&kp W 	&kp E 	&kp R 		&kp T 						&none &none &none &none &none 
+                     	 &kp Q 		&kp S	&kp D 	&kp F 		&gameXmt K G 				&none &none &none &none &none 
                      	 &kp LCTRL 	&none 	&none 	&kp LALT 	&kp SPACE 					&none &none &none &none &none >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		five 	{ display-name = "fg"; // -----------------
@@ -38,9 +38,9 @@ keymap { compatible = "zmk,keymap";
 						 &none &none &none &none &none &none &none &none &none &none >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		six 	{ display-name = "fps"; // ------------------------
-			bindings = < &kp F 			&kp A 			&kp W 	&kp D 			&gameXmt T R 					&none &none &none &none &none
-                    	 &kp LCTRL 		&gameXmt Z Q 	&kp S 	&gameXmt C E 	&gameXmt V G 					&none &none &none &none &none
-                    	 &gameXmt K H	&gameXmt I J	&none 	&kp X 			&kp SPACE 						&none &none &none &none &none >; 
+			bindings = < &kp F 			&kp A 			&kp W 			&kp D 			&gameXmt T R 					&none &none &none &none &none
+                    	 &kp LCTRL 		&gameXmt Z Q 	&kp S 			&gameXmt C E 	&gameXmt V G 					&none &none &none &none &none
+                    	 &gameXmt K H	&gameXmt I J	&gameXmt L M	&kp X 			&kp SPACE 						&none &none &none &none &none >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; }; };
 
 combos { compatible = "zmk,combos";
@@ -64,9 +64,6 @@ combos { compatible = "zmk,combos";
 		cbo_squares			{ timeout-ms = <40>; 	key-positions = < 5 15		>; 	bindings = <	&amt RBKT LBKT		>;	layers = <	1		>; 	};
 		// mods ------------------------------------------------------------------------------------------------------------------------------------------
 		cbo_shift_l  		{ timeout-ms = <20>; 	key-positions = < 3 13		>; 	bindings = <	&sk LSHIFT			>;  layers = <	0 1 2 3	>; 	};
-		cbo_alt_l			{ timeout-ms = <20>; 	key-positions = < 0 10		>; 	bindings = <	&sk LALT			>; 	layers = <	0 1 2 3	>; 	};
-
-		cbo_alt_r			{ timeout-ms = <20>; 	key-positions = < 9 19		>; 	bindings = <	&sk LALT			>; 	layers = <	0 1 2 3	>; 	};
 		cbo_shift_r			{ timeout-ms = <20>; 	key-positions = < 6 16		>; 	bindings = <	&sk RSHIFT			>;  layers = <	0 1 2 3 >; 	};
 
 		cbo_del_l			{ timeout-ms = <20>; 	key-positions = < 2 3		>; 	bindings = <	&amt LC(DEL) DEL	>; 	layers = <	0 1 2	>; 	};
