@@ -75,9 +75,6 @@ include:
  - board: xiao_ble//zmk
    shield: palindrome_dongle
    artifact-name: palindrome-dongle
- - board: xiao_ble//zmk
-   shield: palindrome_dongle prospector_adapter
-   artifact-name: palindrome-dongle
  - board: palindrome_left
    snippet: studio-rpc-usb-uart
    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
