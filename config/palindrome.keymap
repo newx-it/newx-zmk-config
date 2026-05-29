@@ -18,9 +18,9 @@ keymap { compatible = "zmk,keymap";
                      	 &none 				&none 				&none 				&kp SPACE 				&kp N0  						&none 			&none 				&none 					&none 					&none >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp RIGHT LEFT >; };
 		two 	{ display-name = "nav"; // ------------------
-			bindings = < &bootloader 	&kp C_MUTE 	&kp C_PP 	&kp C_NEXT 	&none 			&none 		&kp LEFT 	&kp UP 	&kp DOWN 	&none 
-                     	 &kp C_PREV 	&none 		&none 		&none 		&none 			&none 		&none 		&none 	&none 		&kp RIGHT
-                     	 &none 			&none 		&none 		&none 		&none 			&kp PSCRN 	&none 		&none 	&none 		&none >; 
+			bindings = < &bapp	 	&kp C_MUTE 	&kp C_PP 	&kp C_NEXT 	&none 			&none 		&kp LEFT 	&kp UP 	&kp DOWN 	&bapp
+                     	 &kp C_PREV &none 		&none 		&none 		&none 			&none 		&none 		&none 	&none 		&kp RIGHT
+                     	 &none 		&none 		&none 		&none 		&none 			&kp PSCRN 	&none 		&none 	&none 		&none >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		three 	{ display-name = "fkey"; // -------------------
 			bindings = < &none 	&kp F3 	&kp F2 	&kp F1 	&none  	&none 	&kp F5 	&kp F6 	&kp F7 	&none
