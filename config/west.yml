@@ -1,21 +1,21 @@
 manifest:
   remotes:
-    - name: zmk
-      url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
-    - name: newx-it
-      url-base: https://github.com/newx-it
-    - name: nguyendown
-      url-base: https://github.com/nguyendown
-    - name: dhruvinsh
-      url-base: https://github.com/dhruvinsh
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: carrefinho
       url-base: https://github.com/carrefinho
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh    
+    - name: newx-it
+      url-base: https://github.com/newx-it
+    - name: nguyendown
+      url-base: https://github.com/nguyendown 
     - name: quark-works
-      url-base: https://github.com/quark-works
+      url-base: https://github.com/quark-works   
+    - name: urob
+      url-base: https://github.com/urob
+    - name: zmk
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: zmk
@@ -48,7 +48,25 @@ manifest:
     - name: palindrome-zmk-config
       remote: newx-it
       revision: main
-    - name: lebroke-zmk-config
+    - name: zmk-keyboard-lebroke
+      remote: newx-it
+      revision: main
+    - name: zmk-keyboard-ocarina
+      remote: newx-it
+      revision: main
+    - name: zmk-keyboard-pocketpilot
+      remote: newx-it
+      revision: main
+    - name: zmk-keyboard-pueo
+      remote: newx-it
+      revision: main
+    - name: zmk-keyboard-swagboard
+      remote: newx-it
+      revision: main
+    - name: zmk-keyboard-twenny
+      remote: newx-it
+      revision: main
+    - name: zmk-keyboard-wakizashi
       remote: newx-it
       revision: main
   self:
