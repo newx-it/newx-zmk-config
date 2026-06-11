@@ -72,36 +72,8 @@
 
 ---
 include:
- - board: xiao_ble//zmk
-   shield: palindrome_dongle
-   artifact-name: palindrome-dongle prospector_adapter
- - board: nice_nano//zmk
-   shield: settings_reset
- - board: palindrome_left
-   snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-   artifact-name: palindrome-left
- - board: palindrome_right
-   snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-   artifact-name: palindrome-right
- - board: xiao_ble//zmk
-   shield: settings_reset
-   artifact-name: xiao-reset
- - board: palindrome_left
-   shield: settings_reset
-   artifact-name: palindrome-left-reset
- - board: palindrome_right
-   shield: settings_reset
-   artifact-name: palindrome-right-reset
- - board: xiao_ble//zmk
-   shield: pueo_dongle prospector_adapter
-   artifact-name: pueo-prospector
- - board: nice_nano//zmk
-   shield: pueo_left
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-   artifact-name: pueo-left
- - board: nice_nano//zmk
-   shield: pueo_right
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-   artifact-name: pueo-right
+- board: nice_nano//zmk
+  shield: lebroke
+  snippet: studio-rpc-usb-uart
+  cmake-args: -DCONFIG_ZMK_STUDIO=y
+
