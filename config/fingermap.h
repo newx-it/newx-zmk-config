@@ -47,6 +47,9 @@ macros {
 		ue: ue					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
 									#binding-cells = <0>; bindings = 
 										<&macro_tap &kp U &kp E>;												 };
+		ueu: ueu					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
+									#binding-cells = <0>; bindings = 
+										<&macro_tap &kp U &kp E &kp U>;												};
 		ao: ao 					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
 									#binding-cells = <0>; bindings = 
 										<&macro_tap &kp A &kp O>;												 };
@@ -121,7 +124,7 @@ behaviors {
 		mage_a_tap: mage_a_tap 	{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 								tapping-term-ms = <150>; bindings = <&ao>, <&mage_a>; display-name = "mage-a-mod-Tap";				};
 		mage_e_tap: mage_e_tap 	{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
-								tapping-term-ms = <150>; bindings = <&eu>, <&mage_e>; display-name = "mage-e-mod-Tap";				};
+								tapping-term-ms = <150>; bindings = <&mage_eu>, <&mage_e>; display-name = "mage-e-mod-Tap";				};
 		mage_o_tap: mage_o_tap 	{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 								tapping-term-ms = <150>; bindings = <&oa>, <&mage_o>; display-name = "mage-o-mod-Tap";				};
 		u_tap: u_tap 		{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
@@ -145,6 +148,8 @@ behaviors {
 								akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; }; 						};
 		mage_e: mage_e 		{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp E>;
 								akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX E>; }; 						};
+		mage_eu: mage_eu 	{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&eu>;
+								akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&ueu>; }; 						};
 		mage_a: mage_a 		{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp A>;
 								akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX A>; }; 						};
 		mage_i: mage_i 		{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp I>;
