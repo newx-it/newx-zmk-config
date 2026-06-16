@@ -73,23 +73,5 @@
 ---
 include:
  - board: xiao_ble//zmk
-   shield: settings_reset
- - board: xiao_ble//zmk
    shield: palindrome_dongle
    artifact-name: palindrome-dongle
- - board: palindrome_left
-   snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-   artifact-name: palindrome-left
- - board: palindrome_right
-   snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-   artifact-name: palindrome-right   
- - board: palindrome_left
-   shield: settings_reset
-   artifact-name: palindrome-left-reset
- - board: palindrome_right
-   shield: settings_reset
-   artifact-name: palindrome-right-reset   
-
-
