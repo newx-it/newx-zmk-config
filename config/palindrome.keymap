@@ -33,9 +33,9 @@ keymap { compatible = "zmk,keymap";
                      	 &kp LCTRL 	&none 	&none 	&kp LALT 	&gameXmt LCTRL SPACE		&kp LCTRL 	&none 	&none 	&kp LALT 	&gameXmt LCTRL SPACE >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		five 	{ display-name = "fg"; // -----------------
-			bindings = < &kp A &none &none &none &none &none &none &none &none &none 
-						 &none &none &none &none &none &none &none &none &none &none
-						 &none &none &none &none &none &none &none &none &none &none >; 
+			bindings = < &kp TAB 	&socd A 	&socd2 W 	&socd D 	&kp R 			&none &none &none &none &none 
+						 &kp LSHIFT &kp N1 		&socd2 S	&kp F 		&none 			&none &none &none &none &none
+						 &none 		&none 		&none 		&none 		&kp SPACE		&none &none &none &none &none >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		six 	{ display-name = "fps"; // ------------------------
 			bindings = < &kp F 			&socd A			&socd2 W		&socd D			&gameXmt T R 					&kp F 			&socd A			&socd2 W		&socd D			&gameXmt T R
