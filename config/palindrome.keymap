@@ -8,8 +8,8 @@ behaviors { // -----------------------------------------------------------------
 
 keymap { compatible = "zmk,keymap";
 		zero 	{ display-name = "base"; // -------------------
-			bindings = < &tabmt 0 TAB  	&mage_a_tap 0 0	&mage_e_tap 0 0	&kp C  			&kp G 					&kp K 	&kp T 		&kp H 		&s_tap 0 S	&tabmt 0 TAB
-                         &mage_i  		&mage_o_tap 0 0	&u_tap 0 U 		&mage_tap 0 0  	&kp W 					&kp M  	&kp D  		&kp L   	&f_tap 0 F 	&kp N 
+			bindings = < &tabmt 0 TAB  	&mage_a_tap 0 0	&mage_e_tap 0 0	&kp C  			&kp G 					&kp K 	&kp T 		&kp H 		&s_tap Z S	&tabmt 0 TAB
+                         &mage_i  		&mage_o_tap 0 0	&u_tap 0 U 		&mage_tap 0 0  	&kp W 					&kp M  	&kp D  		&kp L   	&kp F		&kp N 
 						 &y_tap 0 Y 	&sk LGUI		&sk LALT  		&sk LCTRL  		&lt 2 SPACE 			&lt 1 R &sk RCTRL 	&sk LALT	&sk RGUI	&kp B >;
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		one 	{ display-name = "sym"; // --------------------
@@ -45,10 +45,9 @@ keymap { compatible = "zmk,keymap";
 
 combos { compatible = "zmk,combos";
         // alphas ----------------------------------------------------------------------------------------------------------------------------------------
-		cbo_x 				{ timeout-ms = <40>; 	key-positions = < 1 11		>; 	bindings = <	&kp X				>;	layers = <	0		>; 	};
 		cbo_q 				{ timeout-ms = <40>; 	key-positions = < 2 12		>; 	bindings = <	&kp Q				>;	layers = <	0		>; 	};
 		cbo_p 				{ timeout-ms = <40>; 	key-positions = < 4 14		>; 	bindings = <	&p_tap 0 P			>; 	layers = <	0		>; 	};
-		cbo_z 				{ timeout-ms = <40>; 	key-positions = < 5 15		>; 	bindings = <	&kp Z				>;	layers = <	0		>; 	};
+		cbo_x 				{ timeout-ms = <40>; 	key-positions = < 5 15		>; 	bindings = <	&kp X				>;	layers = <	0		>; 	};
 		cbo_j 				{ timeout-ms = <40>; 	key-positions = < 7 17		>; 	bindings = <	&kp J				>;	layers = <	0		>; 	};
 		cbo_v 				{ timeout-ms = <40>; 	key-positions = < 8 18		>; 	bindings = <	&kp V				>;	layers = <	0		>; 	};
 		// symbols ---------------------------------------------------------------------------------------------------------------------------------------
