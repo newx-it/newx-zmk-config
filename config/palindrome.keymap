@@ -98,8 +98,10 @@ combos { compatible = "zmk,combos";
 		// window management -----------------------------------------------------------------------------------------------------------------------------
 		cbo_alwaysontop		{ timeout-ms = <20>; 	key-positions = < 12 13		>; 	bindings = <	&kp LC(LG(T))		>;  layers = <	0 1 2	>; 	};
 		cbo_textextractor	{ timeout-ms = <20>; 	key-positions = < 16 17		>; 	bindings = <	&kp LC(LG(E))		>;  layers = <	0 1 2	>; 	};
-		cbo_dsktop_right	{ timeout-ms = <20>; 	key-positions = < 13 17		>; 	bindings = <	&kp LC(LG(RIGHT))	>;  layers = <	0 1 2	>; 	};
-		cbo_dsktop_left		{ timeout-ms = <20>; 	key-positions = < 12 16		>; 	bindings = <	&kp LC(LG(LEFT))	>;  layers = <	0 1 2	>; 	};
+		cbo_dsktop_right	{ timeout-ms = <20>; 	key-positions = < 3 7		>; 	bindings = <	&kp LC(LG(RIGHT))	>;  layers = <	0 1 2	>; 	};
+		cbo_dsktop_left		{ timeout-ms = <20>; 	key-positions = < 2 6		>; 	bindings = <	&kp LC(LG(LEFT))	>;  layers = <	0 1 2	>; 	};
+		cbo_tab_right		{ timeout-ms = <20>; 	key-positions = < 13 17		>; 	bindings = <	&kp LC(TAB)			>;  layers = <	0 1 2	>; 	};
+		cbo_tab_left		{ timeout-ms = <20>; 	key-positions = < 12 16		>; 	bindings = <	&kp LC(LS(TAB))		>;  layers = <	0 1 2	>; 	};
 		// game ------------------------------------------------------------------------------------------------------------------------------------------
 		g_cbo_discord		{ timeout-ms = <50>; 	key-positions = < 0 24		>; 	bindings = <	&kp LS(GRAVE)		>; 	layers = <	4 5 6	>; 	};
 
