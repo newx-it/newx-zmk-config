@@ -136,6 +136,7 @@ behaviors {
 								akt_ctl_yz { trigger-keys = < LC(Y) >; bindings = < &kp LC(Z) >; 									};
 								akt_edu { trigger-keys = <AT>; bindings = <&edu>; 												 }; };
 		mage_rep: mage_rep 	{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&key_repeat>;
+								akt_spsft { trigger-keys = <SPACE>; bindings = <&sk LSHIFT>;										};
 								akt_xt 	 { trigger-keys = <X>; bindings = <&kp T>; 													};
 								akt_just { trigger-keys = <J>; bindings = <&ust>;	 												};
 								akt_que	 { trigger-keys = <Q>; bindings = <&mage_e>; 												};
