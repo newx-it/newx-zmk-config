@@ -144,6 +144,9 @@ behaviors {
 								akt_ctlv { trigger-keys = <LC(C) LC(X) PSCRN>; bindings = <&kp LC(V)>; 								};
 								akt_mail { trigger-keys = <AT>; bindings = <&mail>; 												};
 								akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>;						 }; };
+		mage_skip: mage_skip { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&none>;
+								akt_e_e { prior-keys = <E>; bindings = <&kp E>;						 								}; 
+								akt_a_a { prior-keys = <A>; bindings = <&kp A>;						 							 }; };
 		mage_w: mage_w 		{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp W>;
 								akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; }; 						};
 		mage_e: mage_e 		{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp E>;
