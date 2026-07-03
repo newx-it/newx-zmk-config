@@ -137,7 +137,7 @@ behaviors {
 								akt_edu { trigger-keys = <AT>; bindings = <&edu>; 												 }; };
 		mage_rep: mage_rep 	{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&key_repeat>;
 								akt_spsft { trigger-keys = <SPACE>; bindings = <&sk LSHIFT>;										};
-								akt_xt 	 { trigger-keys = <X>; bindings = <&kp T>; 													};
+								akt_pt 	 { trigger-keys = <P>; bindings = <&kp T>; 													};
 								akt_just { trigger-keys = <J>; bindings = <&ust>;	 												};
 								akt_que	 { trigger-keys = <Q>; bindings = <&mage_e>; 												};
 								akt_ctlc { trigger-keys = <LC(A)>; bindings = <&kp LC(C)>; 											};
