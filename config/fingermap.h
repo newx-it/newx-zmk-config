@@ -79,7 +79,7 @@ behaviors {
 //---simple config--------------------------------------------------------------------------------------------------------------------
 		socd2: socd2 		{ compatible = "zmk,behavior-socd"; #binding-cells = <1>; bindings = <&kp>; 							};
 		uc: unicode 		{ default-mode = <UC_MODE_WIN_COMPOSE>;																	};
-		sl: sticky_layer 	{ release-after-ms = <600>; quick-release; 																};
+		sl: sticky_layer 	{ release-after-ms = <550>; quick-release; 																};
 		sk: sticky_key 		{ release-after-ms = <750>; quick-release; 																};
 		mt: mod_tap 		{ tapping-term-ms = <200>; 																				};
 //---homerow mods---------------------------------------------------------------------------------------------------------------------
@@ -106,7 +106,7 @@ behaviors {
 		tabmt: tabmt 				{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 										tapping-term-ms = <150>; bindings = <&ezalttab>, <&kp>; display-name = "ezalttab modtap"; 	};
 		slt: slt 					{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
-										tapping-term-ms = <150>; bindings = <&sl>, <&kp>; display-name = "sticky layer modtap"; 	};					
+										tapping-term-ms = <200>; bindings = <&sl>, <&kp>; display-name = "sticky layer modtap"; 	};					
 //---magic----------------------------------------------------------------------------------------------------------------------------
 		mage_tap: mage_tap 	{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 								tapping-term-ms = <150>; bindings = <&mage_rev>, <&mage_rep>; display-name = "mage-mod-Tap";		};
