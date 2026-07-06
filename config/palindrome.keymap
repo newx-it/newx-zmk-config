@@ -9,7 +9,7 @@ behaviors { // -----------------------------------------------------------------
 keymap { compatible = "zmk,keymap";
 		zero 	{ display-name = "base"; // -------------------
 			bindings = < &tabmt 0 TAB  	&mage_a_tap 0 0	&mage_e_tap 0 0	&mage_tap 0 0  	&mage_skip 			&p_tap 0 P 	&kp T 		&kp H 		&s_tap Z S	&tabmt 0 TAB
-                         &mage_i  		&mage_o_tap 0 0	&u_tap 0 U 		&kp C		  	&kp G 				&kp K  	&kp D  		&kp L   	&kp F		&kp N 
+                         &mage_i  		&mage_o_tap 0 0	&u_tap 0 U 		&kp C		  	&kp G 				&kp M  	&kp D  		&kp L   	&kp F		&kp N 
 						 &y_tap 0 Y 	&sk LGUI		&sk LALT  		&sk LCTRL  		&slt 2 SPACE 		&slt 1 R &sk RCTRL 	&sk LALT	&sk RGUI	&kp B >;
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		one 	{ display-name = "sym"; // --------------------
@@ -48,8 +48,8 @@ combos { compatible = "zmk,combos";
 		cbo_x 				{ timeout-ms = <40>; 	key-positions = < 1 11		>; 	bindings = <	&kp X				>;	layers = <	0			>; 	};
 		cbo_q 				{ timeout-ms = <40>; 	key-positions = < 2 12		>; 	bindings = <	&kp Q				>;	layers = <	0			>; 	};
 		cbo_w 				{ timeout-ms = <40>; 	key-positions = < 4 14		>; 	bindings = <	&kp W				>; 	layers = <	0			>; 	};
-		cbo_j 				{ timeout-ms = <40>; 	key-positions = < 5 15		>; 	bindings = <	&kp J				>;	layers = <	0			>; 	};
-		cbo_m				{ timeout-ms = <40>; 	key-positions = < 7 17		>; 	bindings = <	&kp M				>;	layers = <	0			>; 	};
+		cbo_k 				{ timeout-ms = <40>; 	key-positions = < 5 15		>; 	bindings = <	&kp K				>;	layers = <	0			>; 	};
+		cbo_j				{ timeout-ms = <40>; 	key-positions = < 7 17		>; 	bindings = <	&kp J				>;	layers = <	0			>; 	};
 		cbo_v 				{ timeout-ms = <40>; 	key-positions = < 8 18		>; 	bindings = <	&kp V				>;	layers = <	0			>; 	};
 		// symbols ---------------------------------------------------------------------------------------------------------------------------------------
 		u_cbo_left 			{ timeout-ms = <25>; 	key-positions = < 10 6		>; 	bindings = <	&uc 0x2190 0x2190	>; 	layers = <	1			>;	};
