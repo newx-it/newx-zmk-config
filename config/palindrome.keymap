@@ -39,8 +39,8 @@ keymap { compatible = "zmk,keymap";
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		six 	{ display-name = "fps"; // ------------------------
 			bindings = < &kp F 			&socd A			&socd2 W		&socd D			&gameXmt T R 	&none 		&kp C_PREV	&kp	C_NEXT	&none 	&none
-                    	 &kp LCTRL 		&gameXmt Z Q 	&socd2 S		&gameXmt C E 	&gameXmt V G 	&none	 	&kp F2		&kp F3		&none 	&none
-                    	 &gameXmt K H 	&gameXmt I J	&gameXmt L M	&kp X 			&kp SPACE 		&kp C_PP	&none		&none		&none 	&none >; 
+                    	 &kp LCTRL 		&kp Q 			&socd2 S		&kp E 			&gameXmt V G 	&none	 	&kp F2		&kp F3		&none 	&none
+                    	 &gameXmt K H 	&gameXmt I J	&gameXmt L M	&gameXmt Z X 	&kp SPACE 		&kp C_PP	&none		&none		&none 	&none >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; }; };
 
 combos { compatible = "zmk,combos";
