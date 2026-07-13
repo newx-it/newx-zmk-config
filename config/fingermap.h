@@ -187,7 +187,7 @@ behaviors {
 								akt_up { trigger-keys = <UP>; max-prior-idle-ms = <300>; bindings = <&kp UP>; };					};
 								akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&ueue>; }; 						};
 		mage_a: mage_a 		{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp A>;
-								akt_down { trigger-keys = <DOWN>; max-prior-idle-ms = <300>; bindings = <&kp DOWN>; };				};	
+								akt_down { trigger-keys = <DOWN>; max-prior-idle-ms = <300>; bindings = <&kp DOWN>;					};	
 								akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX A>; }; 						};
 		mage_i: mage_i 		{ compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp I>;
 								akt_left { trigger-keys = <LEFT>; max-prior-idle-ms = <300>; bindings = <&kp LEFT>; };
