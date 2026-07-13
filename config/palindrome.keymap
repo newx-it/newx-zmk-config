@@ -75,12 +75,12 @@ combos { compatible = "zmk,combos";
 		cbo_del_r			{ timeout-ms = <20>; 	key-positions = < 6 8		>;	bindings = <	&amt LC(DEL) DEL	>; 	layers = <	0 1 2		>; 	};
 		cbo_esc_r			{ timeout-ms = <20>; 	key-positions = < 6 7 8		>; 	bindings = <	&amt RC(ESC) ESC	>; 	layers = <	0 1 2		>; 	};
 		cbo_enter_r			{ timeout-ms = <20>; 	key-positions = < 7 8		>; 	bindings = <	&amt RS(RET) RET	>; 	layers = <	0 1 2		>; 	};
-		// arrows ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		cbo_left 			{ timeout-ms = <25>; 	key-positions = < 10 6		>; 	bindings = <	&amt LC(LEFT)  LEFT	>; 	layers = <	0			>; require-prior-idle-ms = <50>; };
-		cbo_up 				{ timeout-ms = <25>; 	key-positions = < 2 7		>;	bindings = <	&amt LC(UP)    UP	>; 	layers = <	0			>; require-prior-idle-ms = <50>; };
-		cbo_down 			{ timeout-ms = <25>; 	key-positions = < 1 8		>;	bindings = <	&amt LC(DOWN)  DOWN	>; 	layers = <	0			>; require-prior-idle-ms = <50>; };
-		cbo_right 			{ timeout-ms = <25>; 	key-positions = < 3 19		>; 	bindings = <	&amt LC(RIGHT) RIGHT>;	layers = <	0			>; require-prior-idle-ms = <50>; };
-		// layers ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		// arrows ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		cbo_left 			{ timeout-ms = <25>; 	key-positions = < 10 6		>; 	bindings = <	&amt LC(LEFT)  LEFT	>; 	layers = <	0			>; require-prior-idle-ms = <100>; };
+		cbo_up 				{ timeout-ms = <25>; 	key-positions = < 2 7		>;	bindings = <	&amt LC(UP)    UP	>; 	layers = <	0			>; require-prior-idle-ms = <100>; };
+		cbo_down 			{ timeout-ms = <25>; 	key-positions = < 1 8		>;	bindings = <	&amt LC(DOWN)  DOWN	>; 	layers = <	0			>; require-prior-idle-ms = <100>; };
+		cbo_right 			{ timeout-ms = <25>; 	key-positions = < 3 19		>; 	bindings = <	&amt LC(RIGHT) RIGHT>;	layers = <	0			>; require-prior-idle-ms = <100>; };
+		// layers ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 		cbo_default 		{ timeout-ms = <40>;	key-positions = < 2 3 6 7	>;	bindings = <	&to 0				>; 								};
 		cbo_default_l 		{ timeout-ms = <40>;	key-positions = < 1 2 3	10 	>;	bindings = <	&to 0				>; 	layers = <	4 5 6		>;	};
 		cbo_default_r 		{ timeout-ms = <40>;	key-positions = < 6 7 8 15	>;	bindings = <	&to 0				>; 	layers = <	4 5 6		>;	};
