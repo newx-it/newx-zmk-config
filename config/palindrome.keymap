@@ -57,12 +57,8 @@ combos { compatible = "zmk,combos";
 		u_cbo_down 			{ timeout-ms = <25>; 	key-positions = < 1 8		>; 	bindings = <	&uc 0x2193 0x2193	>; 	layers = <	1			>;	};
 		u_cbo_right 		{ timeout-ms = <25>; 	key-positions = < 3 19		>; 	bindings = <	&uc 0x2192 0x2192	>;	layers = <	1			>;	};
 
-		cbo_at_caret		{ timeout-ms = <40>; 	key-positions = < 3 13		>; 	bindings = <	&amt LS(N6) LS(N2)	>;	layers = <	1			>; 	};
-		cbo_tilde			{ timeout-ms = <40>; 	key-positions = < 2 12		>; 	bindings = <	&kp LS(GRAVE)		>; 	layers = <	1			>; 	};
-
-		cbo_pipe_grave		{ timeout-ms = <40>; 	key-positions = < 6 16		>; 	bindings = <	&amt RPAR LPAR		>;	layers = <	1			>; 	};
-		cbo_curlies			{ timeout-ms = <40>; 	key-positions = < 7 17		>; 	bindings = <	&amt RBRC LBRC 		>;	layers = <	1			>; 	};
-		cbo_squares			{ timeout-ms = <40>; 	key-positions = < 8 18		>; 	bindings = <	&amt RBKT LBKT		>;	layers = <	1			>; 	};
+		cbo_dqt				{ timeout-ms = <40>; 	key-positions = < 3 13		>; 	bindings = <	&kp LS(APOS			>;	layers = <	1			>; 	};
+		cbo_sqt				{ timeout-ms = <40>; 	key-positions = < 6 16		>; 	bindings = <	&kp APOS			>; 	layers = <	1			>; 	};
 		// mods ------------------------------------------------------------------------------------------------------------------------------------------
 		cbo_shift_l  		{ timeout-ms = <20>; 	key-positions = < 3 13		>; 	bindings = <	&sk LSHIFT			>;  layers = <	0 			>; 	};
 		cbo_shift_r			{ timeout-ms = <20>; 	key-positions = < 6 16		>; 	bindings = <	&sk RSHIFT			>;  layers = <	0  			>; 	};
