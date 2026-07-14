@@ -57,7 +57,7 @@ combos { compatible = "zmk,combos";
 		u_cbo_down 			{ timeout-ms = <25>; 	key-positions = < 1 8		>; 	bindings = <	&uc 0x2193 0x2193	>; 	layers = <	1			>;	};
 		u_cbo_right 		{ timeout-ms = <25>; 	key-positions = < 3 19		>; 	bindings = <	&uc 0x2192 0x2192	>;	layers = <	1			>;	};
 
-		cbo_dqt				{ timeout-ms = <40>; 	key-positions = < 3 13		>; 	bindings = <	&kp LS(APOS			>;	layers = <	1			>; 	};
+		cbo_dqt				{ timeout-ms = <40>; 	key-positions = < 3 13		>; 	bindings = <	&kp LS(APOS)		>;	layers = <	1			>; 	};
 		cbo_sqt				{ timeout-ms = <40>; 	key-positions = < 6 16		>; 	bindings = <	&kp APOS			>; 	layers = <	1			>; 	};
 		// mods ------------------------------------------------------------------------------------------------------------------------------------------
 		cbo_shift_l  		{ timeout-ms = <20>; 	key-positions = < 3 13		>; 	bindings = <	&sk LSHIFT			>;  layers = <	0 			>; 	};
