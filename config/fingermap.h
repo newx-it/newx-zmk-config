@@ -69,7 +69,7 @@ macros {
 									#binding-cells = <0>; bindings = 
 										<&macro_tap &kp M &kp M>;												 };
 //---game stuff----------------------------------------------------------------------------------------------------
-		gameX: gameX 			{ wait-ms = <5>; tap-ms = <20>; compatible = "zmk,behavior-macro-one-param"; 
+		gameX: gameX 			{ wait-ms = <5>; tap-ms = <30>; compatible = "zmk,behavior-macro-one-param"; 
 									#binding-cells = <1>; bindings = 
 										<&macro_param_1to1>, <&macro_tap &kp 0>;	 						      };
 		gamespaceshift: gamespaceshift 	{ wait-ms = <3>; tap-ms = <1>; compatible = "zmk,behavior-macro"; 
