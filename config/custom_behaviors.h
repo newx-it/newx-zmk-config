@@ -1,89 +1,85 @@
-//----------------------------------------
-#include <behaviors.dtsi>
-#include <behaviors/socd.dtsi>
-#include <behaviors/unicode.dtsi>
-#include <behaviors/num_word.dtsi>
-#include <behaviors/battery_percentage_printer.dtsi>
-//----------------------------------------
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
-//----------------------------------------
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
-//----------------------------------------
-
-/ {
+/*┌──────────────────────────────────────────────────────────┐*/
+/*│*/ #include <behaviors.dtsi> 						   /*│*/
+/*│*/ #include <behaviors/socd.dtsi> 					   /*│*/
+/*│*/ #include <behaviors/unicode.dtsi> 				   /*│*/
+/*│*/ #include <behaviors/num_word.dtsi> 				   /*│*/
+/*│*/ #include <behaviors/battery_percentage_printer.dtsi> /*│*/
+/*│*/ #include <dt-bindings/zmk/bt.h> 					   /*│*/
+/*│*/ #include <dt-bindings/zmk/keys.h> 				   /*│*/
+/*│*/ #include <dt-bindings/zmk/outputs.h> 				   /*│*/
+/*│*/ #include <dt-bindings/zmk/pointing.h> 			   /*│*/
+/*│*/ #define ZMK_POINTING_DEFAULT_MOVE_VAL 2000 		   /*│*/
+/*└ ─────────────────────────────────────────────────────────┘*/
+/ { 
 macros { 
-//---paramaterized macros------------------------------------------------------------------------------------------
-		uX: uX 					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param"; 
-   									#binding-cells = <1>; bindings = 
-   										<&macro_tap &kp U>, 
-										<&macro_param_1to1>, <&macro_tap &kp 0>; 							 	 };
-		shiftXdel: shiftXdel 	{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param"; 
-									#binding-cells = <1>; bindings = 
-										<&macro_press &kp LSHIFT>,
-										<&macro_param_1to1>, <&macro_tap &kp 0>,
-										<&macro_release &kp LSHIFT>,
-										<&macro_tap &kp DEL>; 	 												 };
-		Xspace: Xspace 			{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param"; 
-									#binding-cells = <1>; bindings = 
-										<&macro_param_1to1>, <&macro_tap &kp 0 &kp SPACE>;	 					 };
-		XXleft: XXleft 			{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param"; 
-									#binding-cells = <1>; bindings = 
-										<&macro_param_1to1>, <&macro_tap &kp 0>,
-										<&macro_param_1to1>, <&macro_tap &kp 0 &kp LEFT>; 	 	 				 };
-
-//---text insertion------------------------------------------------------------------------------------------------
-		mail: mail 				{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;	 };
-		edu: edu 				{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp I &kp S &kp U &kp DOT &kp E &kp D &kp U>;	 			 };
-		oa: oa 					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp O &kp A>;												 };
-		ue: ue					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp U &kp E>;												 };
-		ueue: ueue					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp U &kp E &kp U &kp E>;									};
-		ust: ust					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp U &kp S &kp T>;											};
-		ao: ao 					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp A &kp O>;												 };
-		eu: eu					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp E &kp U>;												 };
-		yi: yi					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp Y &kp I>;												 };
-		pp: pp					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp P &kp P>;												 };
-		mm: mm					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp M &kp M>;												 };
-		n90: n90					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp N9 &kp N0>;												 };
-		n09: n09					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp N0 &kp N9>;												 };
-//---game stuff----------------------------------------------------------------------------------------------------
-		gameX: gameX 			{ wait-ms = <5>; tap-ms = <30>; compatible = "zmk,behavior-macro-one-param"; 
-									#binding-cells = <1>; bindings = 
-										<&macro_param_1to1>, <&macro_tap &kp 0>;	 						      };
-		gamespaceshift: gamespaceshift 	{ wait-ms = <3>; tap-ms = <1>; compatible = "zmk,behavior-macro"; 
-									#binding-cells = <0>; bindings = 
-										<&macro_tap &kp SPACE &kp LSHIFT>;	 						   		   }; };
-		
-//-----------------------------------------------------------------------------------------------------------------
-
+/*┌─── paramaterized macros ─────────────────────────────────────────────────────────────────────────────┐*/
+/*│*/ uX: uX { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param";  	 		   /*│*/
+/*│*/    		#binding-cells = <1>; bindings =  													   /*│*/
+/*│*/    			<&macro_tap &kp U>,  															   /*│*/
+/*│*/ 				<&macro_param_1to1>, <&macro_tap &kp 0>; }; 									   /*│*/
+/*│*/ shiftXdel: shiftXdel { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param"; /*│*/
+/*│*/ 			#binding-cells = <1>; bindings = 	 												   /*│*/
+/*│*/ 				<&macro_press &kp LSHIFT>, 														   /*│*/
+/*│*/ 				<&macro_param_1to1>, <&macro_tap &kp 0>, 										   /*│*/
+/*│*/ 				<&macro_release &kp LSHIFT>, 													   /*│*/
+/*│*/ 				<&macro_tap &kp DEL>; };														   /*│*/
+/*│*/ Xspace: Xspace { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param"; 	   /*│*/
+/*│*/ 			#binding-cells = <1>; bindings =  													   /*│*/
+/*│*/ 				<&macro_param_1to1>, <&macro_tap &kp 0 &kp SPACE>; }; 							   /*│*/
+/*│*/ 		XXleft: XXleft { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param"; /*│*/
+/*│*/ 			#binding-cells = <1>; bindings =  													   /*│*/
+/*│*/ 				<&macro_param_1to1>, <&macro_tap &kp 0>, 										   /*│*/
+/*│*/ 				<&macro_param_1to1>, <&macro_tap &kp 0 &kp LEFT>; }; 							   /*│*/
+/*└──────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
+/*┌─── text insertion ─────────────────────────────────────────────────────────────────────────┐*/
+/*│*/ mail: mail { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro";  		 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 				<&macro_tap &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>; }; /*│*/
+/*│*/ edu: edu { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro";  			 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings =  											 /*│*/
+/*│*/ 				<&macro_tap &kp I &kp S &kp U &kp DOT &kp E &kp D &kp U>; }; 			 /*│*/
+/*│*/ oa: oa { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro";  			 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings =  											 /*│*/
+/*│*/ 				<&macro_tap &kp O &kp A>; };											 /*│*/
+/*│*/ ue: ue { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 				 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 				<&macro_tap &kp U &kp E>; };											 /*│*/
+/*│*/ ueue: ueue { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 			 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 				<&macro_tap &kp U &kp E &kp U &kp E>; };								 /*│*/
+/*│*/ ust: ust { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 			 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 				<&macro_tap &kp U &kp S &kp T>; };										 /*│*/
+/*│*/ ao: ao { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 				 /*│*/
+/*│*/ 	#binding-cells = <0>; bindings = 													 /*│*/
+/*│*/ 				<&macro_tap &kp A &kp O>; };											 /*│*/
+/*│*/ eu: eu { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 				 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 			<&macro_tap &kp E &kp U>; };												 /*│*/
+/*│*/ yi: yi { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 				 /*│*/
+/*│*/ 		#binding-cells = <0>; bindings = 												 /*│*/
+/*│*/ 				<&macro_tap &kp Y &kp I>; };											 /*│*/
+/*│*/ pp: pp { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 				 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 				<&macro_tap &kp P &kp P>; };											 /*│*/
+/*│*/ mm: mm { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 				 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 				<&macro_tap &kp M &kp M>; };											 /*│*/
+/*│*/ n90: n90 { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 			 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 				<&macro_tap &kp N9 &kp N0>; };											 /*│*/
+/*│*/ n09: n09 { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 			 /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 											 /*│*/
+/*│*/ 				<&macro_tap &kp N0 &kp N9>; };											 /*│*/
+/*└ ───────────────────────────────────────────────────────────────────────────────────────────┘*/
+/*┌─── game ───────────────────────────────────────────────────────────────────────────────────────────────────┐*/
+/*│*/ gameX: gameX { wait-ms = <5>; tap-ms = <30>; compatible = "zmk,behavior-macro-one-param";  			 /*│*/
+/*│*/ 			#binding-cells = <1>; bindings = 															 /*│*/
+/*│*/ 				<&macro_param_1to1>, <&macro_tap &kp 0>; }; 											 /*│*/
+/*│*/ 		gamespaceshift: gamespaceshift { wait-ms = <3>; tap-ms = <1>; compatible = "zmk,behavior-macro"; /*│*/
+/*│*/ 			#binding-cells = <0>; bindings = 															 /*│*/
+/*│*/ 				<&macro_tap &kp SPACE &kp LSHIFT>; }; };												 /*│*/	
+/*└ ───────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 behaviors { 
 //---simple config--------------------------------------------------------------------------------------------------------------------
 		socd2: socd2 		{ compatible = "zmk,behavior-socd"; #binding-cells = <1>; bindings = <&kp>; 							};
