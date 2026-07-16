@@ -68,6 +68,12 @@ macros {
 		mm: mm					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
 									#binding-cells = <0>; bindings = 
 										<&macro_tap &kp M &kp M>;												 };
+		n90: n90					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
+									#binding-cells = <0>; bindings = 
+										<&macro_tap &kp N9 &kp N0>;												 };
+		n09: n09					{ wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro"; 
+									#binding-cells = <0>; bindings = 
+										<&macro_tap &kp N0 &kp N9>;												 };
 //---game stuff----------------------------------------------------------------------------------------------------
 		gameX: gameX 			{ wait-ms = <5>; tap-ms = <30>; compatible = "zmk,behavior-macro-one-param"; 
 									#binding-cells = <1>; bindings = 
@@ -119,6 +125,10 @@ behaviors {
 								tapping-term-ms = <175>; bindings = <&pp>, <&kp>; display-name = "p-mod-Tap";						};
 		m_tap: m_tap 		{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 								tapping-term-ms = <175>; bindings = <&mm>, <&kp>; display-name = "m-mod-Tap";						};
+		n90_tap: n90_tap 	{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
+								tapping-term-ms = <175>; bindings = <&n90>, <&kp>; display-name = "n90-mod-Tap";					};
+		n09_tap: n09_tap	{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
+								tapping-term-ms = <175>; bindings = <&n09>, <&kp>; display-name = "m-mod-Tap";						};
 		s_tap: s_tap 		{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 								tapping-term-ms = <175>; bindings = <&kp>, <&kp>; display-name = "s-mod-Tap";						};
 		mage_a_tap: mage_a_tap 	{ compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
