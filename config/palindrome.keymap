@@ -132,17 +132,17 @@ combos
 	/*│*/ cbo_tab_right	  	{ timeout-ms = <20>; key-positions = < 13 17 >; bindings = < &kp LC(TAB)	   >; layers = < 0 1 2 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*│*/ cbo_tab_left	  	{ timeout-ms = <20>; key-positions = < 12 16 >; bindings = < &kp LC(LS(TAB))   >; layers = < 0 1 2 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-	/*┌─── game ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
-	/*│*/ g_cbo_discord { timeout-ms = <50>; key-positions = < 0 24  >; bindings = <	&kp LS(GRAVE) >; layers = <	4 5 6 >; }; /*│*/
-	/*│*/ g_cbo_tab	  	{ timeout-ms = <50>; key-positions = < 1 3   >; bindings = <	&kp TAB		  >; layers = <	4 5 6 >; }; /*│*/
-	/*│*/ g_cbo_esc	  	{ timeout-ms = <50>; key-positions = < 1 2 3 >; bindings = <	&kp ESC		  >; layers = <	4 5 6 >; }; /*│*/
-	/*│*/ qwer_cbo_1    { timeout-ms = <75>; key-positions = < 1 11  >; bindings = <	&kp N1		  >; layers = <	4	  >; }; /*│*/
-	/*│*/ qwer_cbo_2    { timeout-ms = <75>; key-positions = < 2 12  >; bindings = <	&kp N2		  >; layers = <	4	  >; }; /*│*/
-	/*│*/ qwer_cbo_3    { timeout-ms = <75>; key-positions = < 3 13  >; bindings = <	&kp N3		  >; layers = <	4	  >; }; /*│*/
-	/*│*/ qwer_cbo_4    { timeout-ms = <75>; key-positions = < 4 14  >; bindings = <	&kp N4		  >; layers = <	4	  >; }; /*│*/
-	/*│*/ fps_cbo_1     { timeout-ms = <75>; key-positions = < 3 13  >; bindings = <	&kp N1		  >; layers = <	6	  >; }; /*│*/
-	/*│*/ fps_cbo_2 	{ timeout-ms = <75>; key-positions = < 1 11  >; bindings = <	&kp N2		  >; layers = <	6	  >; }; /*│*/
+	/*┌─── game ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
+	/*│*/ g_cbo_discord { timeout-ms = <50>; key-positions = < 0 24  >; bindings = <	&kp LS(GRAVE) >; layers = <	4 5 6 	>; }; /*│*/
+	/*│*/ g_cbo_tab	  	{ timeout-ms = <50>; key-positions = < 1 3   >; bindings = <	&kp TAB		  >; layers = <	4 5 6 	>; }; /*│*/
+	/*│*/ g_cbo_esc	  	{ timeout-ms = <50>; key-positions = < 1 2 3 >; bindings = <	&kp ESC		  >; layers = <	4 5 6 	>; }; /*│*/
+	/*│*/ qwer_cbo_1    { timeout-ms = <75>; key-positions = < 1 11  >; bindings = <	&kp N1		  >; layers = <	4	  	>; }; /*│*/
+	/*│*/ qwer_cbo_2    { timeout-ms = <75>; key-positions = < 2 12  >; bindings = <	&kp N2		  >; layers = <	4	  	>; }; /*│*/
+	/*│*/ qwer_cbo_3    { timeout-ms = <75>; key-positions = < 3 13  >; bindings = <	&kp N3		  >; layers = <	4	  	>; }; /*│*/
+	/*│*/ qwer_cbo_4    { timeout-ms = <75>; key-positions = < 4 14  >; bindings = <	&kp N4		  >; layers = <	4	  	>; }; /*│*/
+	/*│*/ fps_cbo_1     { timeout-ms = <75>; key-positions = < 3 13  >; bindings = <	&kp N1		  >; layers = <	6	  	>; }; /*│*/
+	/*│*/ fps_cbo_2 	{ timeout-ms = <75>; key-positions = < 1 11  >; bindings = <	&kp N2		  >; layers = <	6	  	>; }; /*│*/
 	/*│*/ fps_cbo_b	  	{ timeout-ms = <50>; key-positions = < 12 13 >; bindings = <	&kp B		  >; layers = <	6 >; }; }; }; /*│*/
-	/*└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
+	/*└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 /*────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────*/
 
