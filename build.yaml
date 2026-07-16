@@ -74,5 +74,4 @@
 include:
  - board: xiao_ble//zmk
    shield: palindrome_dongle
-   snippet: zmk-usb-logging
    artifact-name: palindrome-dongle
