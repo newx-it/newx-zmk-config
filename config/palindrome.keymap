@@ -28,24 +28,26 @@ keymap { compatible = "zmk,keymap";
                          &none 	&none 	&none 	&none 	&kp F11 &kp F12	&none 	&none 	&none 	&none >;
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		four 	{ display-name = "qwer"; // ----------------------
-			bindings = < &kp F	   &kp W &kp E &kp R 	&kp T 												&none 		&kp C_PREV	&kp	C_NEXT	&none 	&none
-                     	 &kp Q 	   &kp S &kp D &kp F 	&gameXmt K G 										&none	 	&kp F2		&kp F3		&none 	&none
-                     	 &kp LCTRL &none &none &kp LALT &gameXmt LCTRL SPACE 								&kp C_PP	&none		&none		&none 	&none >; 
+			bindings = </*	  ┌───────────────┬───────────┬───────────┬──────────────┬──────────────────────────┐							┌──────────────┬────────────────┬────────────────┬───────────┬───────────┐	  */
+						/*	  │*/ &kp F 	/*│*/ &kp W /*│*/ &kp E /*│*/ &kp R    /*│*/ &kp T 				  /*│							│*/ &none 	 /*│*/ &kp C_PREV /*│*/ &kp C_NEXT /*│*/ &none /*│*/ &none /*│	  */
+                     	/*	  │*/ &kp Q 	/*│*/ &kp S /*│*/ &kp D /*│*/ &kp F	   /*│*/ &gameXmt K G 		  /*│							│*/ &none 	 /*│*/ &kp F2	  /*│*/ &kp F3	   /*│*/ &none /*│*/ &none /*│	  */
+                     	/*	  │*/ &kp LCTRL /*│*/ &none /*│*/ &none /*│*/ &kp LALT /*│*/ &gameXmt LCTRL SPACE /*│							│*/ &kp C_PP /*│*/ &none	  /*│*/ &none	   /*│*/ &none /*│*/ &none /*│	  */
+						/*	  └───────────────┴───────────┴───────────┴──────────────┴──────────────────────────┘							└──────────────┴────────────────┴────────────────┴───────────┴───────────┘	  */ >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		five 	{ display-name = "fg"; // -----------------
-			bindings = < &kp TAB 	&socd A &socd2 W &socd D &kp R 											&none 		&kp C_PREV	&kp	C_NEXT	&none 	&none
-						 &kp LSHIFT &kp Q 	&socd2 S &kp X 	 &kp F 		 									&none	 	&kp F2		&kp F3		&none 	&none
-						 &kp N5		&kp N4 	&kp V 	 &kp N1  &kp SPACE 										&kp C_PP	&none		&none		&none 	&none >; 
+			bindings = </*	  ┌────────────────┬─────────────┬──────────────┬─────────────┬───────────────┐									┌──────────────┬────────────────┬────────────────┬───────────┬───────────┐	  */
+						/*	  │*/ &kp TAB 	 /*│*/ &socd A /*│*/ &socd2 W /*│*/ &socd D /*│*/ &kp R 	/*│									│*/ &none 	 /*│*/ &kp C_PREV /*│*/ &kp C_NEXT /*│*/ &none /*│*/ &none /*│	  */
+						/*	  │*/ &kp LSHIFT /*│*/ &kp Q   /*│*/&socd2 S  /*│*/ &kp X 	/*│*/ &kp F	    /*│									│*/ &none 	 /*│*/ &kp F2	  /*│*/ &kp F3	   /*│*/ &none /*│*/ &none /*│	  */
+						/*	  │*/ &kp N5	 /*│*/ &kp N4  /*│*/&kp V 	  /*│*/ &kp N1  /*│*/ &kp SPACE /*│									│*/ &kp C_PP /*│*/ &none	  /*│*/ &none	   /*│*/ &none /*│*/ &none /*│	  */
+						/*	  └────────────────┴─────────────┴──────────────┴─────────────┴───────────────┘									└──────────────┴────────────────┴────────────────┴───────────┴───────────┘	  */ >; 
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; };
 		six 	{ display-name = "fps"; // ------------------------
-			
-			bindings = < 	/* ┌────────────┬─────────────┬────────────┬────────────┬────────────┐				   ┌────────┬──────────┬──────────┬─────┬─────┐ */
-								&kp F 		  &socd A	   &socd2 W		&socd D		 &gameXmt T R 					&none 	 &kp C_PREV	&kp	C_NEXT &none &none
-                    	 		&kp LCTRL 	  &gameXmt Z Q &socd2 S		&gameXmt C E &gameXmt V G 					&none	 &kp F2		&kp F3	   &none &none
-                    	 		&gameXmt K H &gameXmt I J  &gameXmt L M	&gameXmt Y X &kp SPACE 						&kp C_PP &none		&none	   &none &none 
-			>; 
-
-            sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; }; };
+			bindings = </*	  ┌──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────┐				┌──────────────┬────────────────┬────────────────┬───────────┬───────────┐	  */
+						/*	  │*/ &kp F 	   /*│*/ &socd A 	  /*│*/ &socd2 W	 /*│*/ &socd D		/*│*/ &gameXmt T R /*│				│*/	&none 	 /*│*/ &kp C_PREV /*│*/ &kp C_NEXT /*│*/ &none /*│*/ &none /*│	  */
+                    	/*	  │*/ &kp LCTRL    /*│*/ &gameXmt Z Q /*│*/ &socd2 S	 /*│*/ &gameXmt C E /*│*/ &gameXmt V G /*│				│*/ &none 	 /*│*/ &kp F2	  /*│*/ &kp F3	   /*│*/ &none /*│*/ &none /*│	  */
+                    	/*	  │*/ &gameXmt K H /*│*/ &gameXmt I J /*│*/ &gameXmt L M /*│*/ &gameXmt Y X /*│*/ &kp SPACE    /*│				│*/ &kp C_PP /*│*/ &none      /*│*/ &none	   /*│*/ &none /*│*/ &none /*│	  */
+						/*	  └──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────┘				└──────────────┴────────────────┴────────────────┴───────────┴───────────┘	  */ >; 
+			sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT >; }; };
 
 combos { compatible = "zmk,combos";
         // alphas ----------------------------------------------------------------------------------------------------------------------------------------
