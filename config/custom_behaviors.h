@@ -115,8 +115,8 @@ behaviors {
 /*│*/		tapping-term-ms = <150>; bindings = <&ezalttab>, <&kp>; display-name = "ezalttab modtap"; }; 			   	/*│*/
 /*│*/ slt: slt { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";					/*│*/
 /*│*/		tapping-term-ms = <200>; bindings = <&sl>, <&kp>; display-name = "sticky layer modtap"; };		 		    /*│*/			
-/*└ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-/*┌─── magic ───────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
+/*└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
+/*┌─── magic ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
 /*│*/ mage_tap: mage_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";			 /*│*/
 /*│*/ 		tapping-term-ms = <150>; bindings = <&mage_rev>, <&mage_rep>; display-name = "mage-mod-Tap"; };					 /*│*/
 /*│*/ y_tap: y_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 					 /*│*/
@@ -189,27 +189,29 @@ behaviors {
 /*│*/ mage_n: mage_n { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp N>;					 /*│*/
 /*│*/		akt_right { trigger-keys = <RIGHT>; max-prior-idle-ms = <300>; bindings = <&kp RIGHT>; }; };					 /*│*/
 /*│*/ mage_w: mage_w { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp W>;					 /*│*/
-/*│*/		akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; }; }; /*│*/
-/*│*/ mage_e: mage_e { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp E>; /*│*/
-/*│*/		akt_up { trigger-keys = <UP>; max-prior-idle-ms = <300>; bindings = <&kp UP>; };	 /*│*/
-/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX E>; }; }; /*│*/
-/*│*/ mage_eu: mage_eu { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&eu>; /*│*/
-/*│*/		akt_up { trigger-keys = <UP>; max-prior-idle-ms = <300>; bindings = <&kp UP>; }; /*│*/
-/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&ueue>; }; }; /*│*/
-/*│*/ mage_a: mage_a { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp A>; /*│*/
-/*│*/		akt_down { trigger-keys = <DOWN>; max-prior-idle-ms = <300>; bindings = <&kp DOWN>; };	 /*│*/
-/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX A>; }; }; /*│*/ 
-/*│*/ mage_i: mage_i { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp I>; /*│*/
-/*│*/		akt_left { trigger-keys = <LEFT>; max-prior-idle-ms = <300>; bindings = <&kp LEFT>; }; /*│*/
-/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX I>; }; }; /*│*/
-/*│*/ mage_o: mage_o { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp O>; /*│*/
-/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX O>; }; }; /*│*/
-//---fun stuff------------------------------------------------------------------------------------------------------------------------
-		ezalttab: ezalttab 	{ compatible = "zmk,behavior-tri-state"; label = "SWAPPER"; #binding-cells = <0>;
-            					bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>; ignored-key-positions = <0 2 5 7>; };
-		deadenter: deadenter { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; 
-								bindings = <&kp ENTER>, <&kp F24>; mods = <(MOD_LALT)>; };
-//---game stuff-----------------------------------------------------------------------------------------------------------------------
-		gameXmt: gameX_mod_tap 	{ compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; 
-									tapping-term-ms = <150>; bindings = <&kp>, <&gameX>; display-name = "gameX mod-Tap"; }; }; };
-//------------------------------------------------------------------------------------------------------------------------------------
+/*│*/		akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; }; }; 								 /*│*/
+/*│*/ mage_e: mage_e { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp E>;					 /*│*/
+/*│*/		akt_up { trigger-keys = <UP>; max-prior-idle-ms = <300>; bindings = <&kp UP>; };								 /*│*/
+/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX E>; }; };								 /*│*/
+/*│*/ mage_eu: mage_eu { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&eu>;					 /*│*/
+/*│*/		akt_up { trigger-keys = <UP>; max-prior-idle-ms = <300>; bindings = <&kp UP>; };								 /*│*/
+/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&ueue>; }; };								 /*│*/
+/*│*/ mage_a: mage_a { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp A>;					 /*│*/
+/*│*/		akt_down { trigger-keys = <DOWN>; max-prior-idle-ms = <300>; bindings = <&kp DOWN>; };							 /*│*/
+/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX A>; }; };								 /*│*/ 
+/*│*/ mage_i: mage_i { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp I>;					 /*│*/
+/*│*/		akt_left { trigger-keys = <LEFT>; max-prior-idle-ms = <300>; bindings = <&kp LEFT>; };							 /*│*/
+/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX I>; }; };								 /*│*/
+/*│*/ mage_o: mage_o { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp O>;					 /*│*/
+/*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX O>; }; };								 /*│*/
+/*└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
+/*┌─── fun stuff ───────────────────────────────────────────────────────────────────────────────────────────────┐*/
+/*│*/ ezalttab: ezalttab 	{ compatible = "zmk,behavior-tri-state"; label = "SWAPPER"; #binding-cells = <0>; /*│*/
+/*│*/ 		bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>; ignored-key-positions = <0 2 5 7>; };				  /*│*/
+/*│*/ deadenter: deadenter { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; 					  /*│*/
+/*│*/ 		bindings = <&kp ENTER>, <&kp F24>; mods = <(MOD_LALT)>; }; 										  /*│*/
+/*└─────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
+/*┌─── game stuff ──────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
+/*│*/ gameXmt: gameX_mod_tap { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; /*│*/
+/*│*/ 		tapping-term-ms = <150>; bindings = <&kp>, <&gameX>; display-name = "gameX mod-Tap"; }; }; };			  /*│*/
+/*└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
