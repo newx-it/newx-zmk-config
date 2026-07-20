@@ -10,8 +10,7 @@
 /*│*/ #include <dt-bindings/zmk/pointing.h> 			   /*│*/
 /*│*/ #define ZMK_POINTING_DEFAULT_MOVE_VAL 2000 		   /*│*/
 /*└ ─────────────────────────────────────────────────────────┘*/
-/ { 
-macros { 
+/ { macros { 
 /*┌─── paramaterized macros ─────────────────────────────────────────────────────────────────────────────┐*/
 /*│*/ uX: uX { wait-ms = <5>; tap-ms = <5>; compatible = "zmk,behavior-macro-one-param";  	 		   /*│*/
 /*│*/    		#binding-cells = <1>; bindings =  													   /*│*/
@@ -78,9 +77,9 @@ macros {
 /*│*/ 				<&macro_param_1to1>, <&macro_tap &kp 0>; }; 											 /*│*/
 /*│*/ 		gamespaceshift: gamespaceshift { wait-ms = <3>; tap-ms = <1>; compatible = "zmk,behavior-macro"; /*│*/
 /*│*/ 			#binding-cells = <0>; bindings = 															 /*│*/
-/*│*/ 				<&macro_tap &kp SPACE &kp LSHIFT>; }; };												 /*│*/	
+/*│*/ 				<&macro_tap &kp SPACE &kp LSHIFT>; };												    /*│*/	
 /*└ ───────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-behaviors { 
+}; behaviors { 
 /*┌─── simple config ───────────────────────────────────────────────────────────────────────────────┐*/
 /*│*/ socd2: socd2 { compatible = "zmk,behavior-socd"; #binding-cells = <1>; bindings = <&kp>; }; /*│*/
 /*│*/ uc: unicode { default-mode = <UC_MODE_WIN_COMPOSE>;	}; 									  /*│*/
@@ -221,5 +220,6 @@ behaviors {
 /*└─────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 /*┌─── game stuff ──────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
 /*│*/ gameXmt: gameX_mod_tap { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; /*│*/
-/*│*/ 		tapping-term-ms = <150>; bindings = <&kp>, <&gameX>; display-name = "gameX mod-Tap"; }; }; };			  /*│*/
+/*│*/ 		tapping-term-ms = <150>; bindings = <&kp>, <&gameX>; display-name = "gameX mod-Tap"; }; };   			  /*│*/
 /*└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
+}; 
