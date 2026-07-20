@@ -163,7 +163,7 @@ behaviors {
 /*│*/ 		akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; }; };								 /*│*/
 /*│*/ mage_skip: mage_skip { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&none>; skip-magic; /*│*/
 /*│*/ 		akt_e_u { trigger-keys = < A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SPACE >; 						 /*│*/
-/*│*/ 			prior-keys = <E>; bindings = <&u_tap 0 U>; }; 																 /*│*/
+/*│*/ 			prior-keys = <E>; bindings = <&mage_u_tap 0 0>; }; 															 /*│*/
 /*│*/ 		akt_u_e { trigger-keys = < A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SPACE >; 						 /*│*/
 /*│*/ 			prior-keys = <U>; bindings = <&mage_e_tap 0 0>; }; 															 /*│*/
 /*│*/ 		akt_a_o { trigger-keys = < A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SPACE >; 						 /*│*/
