@@ -77,7 +77,7 @@
 /*│*/ 				<&macro_param_1to1>, <&macro_tap &kp 0>; }; 											 /*│*/
 /*│*/ 		gamespaceshift: gamespaceshift { wait-ms = <3>; tap-ms = <1>; compatible = "zmk,behavior-macro"; /*│*/
 /*│*/ 			#binding-cells = <0>; bindings = 															 /*│*/
-/*│*/ 				<&macro_tap &kp SPACE &kp LSHIFT>; };												    /*│*/	
+/*│*/ 				<&macro_tap &kp SPACE &kp LSHIFT>; };												     /*│*/	
 /*└ ───────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 }; behaviors { 
 /*┌─── simple config ───────────────────────────────────────────────────────────────────────────────┐*/
