@@ -137,8 +137,8 @@ behaviors {
 /*│*/ 		tapping-term-ms = <175>; bindings = <&mage_eu>, <&mage_e>; display-name = "mage-e-mod-Tap"; };					 /*│*/
 /*│*/ mage_o_tap: mage_o_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 		 /*│*/
 /*│*/ 		tapping-term-ms = <175>; bindings = <&oa>, <&mage_o>; display-name = "mage-o-mod-Tap"; };						 /*│*/
-/*│*/ u_tap: u_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferredh"; 				 /*│*/
-/*│*/ 		tapping-term-ms = <175>; bindings = <&ue>, <&kp>; display-name = "u-mod-Tap"; };								 /*│*/
+/*│*/ mage_u_tap: mage_u_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferredh"; /*│*/
+/*│*/ 		tapping-term-ms = <175>; bindings = <&ue>, <&mage_u>; display-name = "mage-u-mod-Tap"; };						/*│*/
 /*│*/ mage_rev: mage_rev { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&key_repeat>;		 /*│*/
 /*│*/ 		akt_must { trigger-keys = <M>; bindings = <&ust>; };															 /*│*/
 /*│*/ 		akt_que { trigger-keys = <Q>; bindings = <&mage_eu>; };															 /*│*/
