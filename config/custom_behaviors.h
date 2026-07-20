@@ -185,11 +185,11 @@ behaviors {
 /*│*/ mage_u: mage_u { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp U>;					 /*│*/
 /*│*/		akt_left { trigger-keys = <LC(LS(TAB))>; max-prior-idle-ms = <300>; bindings = <&kp LC(LS(TAB))>; }; };			 /*│*/
 /*│*/ mage_c: mage_c { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp C>;					 /*│*/
-/*│*/		akt_left { trigger-keys = <LC(TAB)>; max-prior-idle-ms = <300>; bindings = <&kp LC(TAB)>; }; };					/*│*/
+/*│*/		akt_left { trigger-keys = <LC(TAB)>; max-prior-idle-ms = <300>; bindings = <&kp LC(TAB)>; }; };					 /*│*/
 /*│*/ mage_d: mage_d { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp D>;					 /*│*/
 /*│*/		akt_left { trigger-keys = <LC(LS(TAB))>; max-prior-idle-ms = <300>; bindings = <&kp LC(LS(TAB))>; }; };			 /*│*/
 /*│*/ mage_l: mage_l { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp L>;					 /*│*/
-/*│*/		akt_left { trigger-keys = <LC(TAB)>; max-prior-idle-ms = <300>; bindings = <&kp LC(TAB)>; }; };					/*│*/
+/*│*/		akt_left { trigger-keys = <LC(TAB)>; max-prior-idle-ms = <300>; bindings = <&kp LC(TAB)>; }; };					 /*│*/
 /*│*/ mage_h: mage_h { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp H>;					 /*│*/
 /*│*/		akt_up { trigger-keys = <UP>; max-prior-idle-ms = <300>; bindings = <&kp UP>; }; };								 /*│*/ 
 /*│*/ mage_s: mage_s { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&s_tap Z S>;				 /*│*/
