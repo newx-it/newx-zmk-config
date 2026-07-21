@@ -213,10 +213,12 @@
 /*│*/		akt_ue { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&uX O>; }; };								 /*│*/
 /*└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 /*┌─── fun stuff ───────────────────────────────────────────────────────────────────────────────────────────────┐*/
-/*│*/ ezalttab: ezalttab 	{ compatible = "zmk,behavior-tri-state"; label = "SWAPPER"; #binding-cells = <0>; /*│*/
-/*│*/ 		bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>; ignored-key-positions = <0 2 5 7>; };				  /*│*/
-/*│*/ deadenter: deadenter { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; 					  /*│*/
-/*│*/ 		bindings = <&kp ENTER>, <&kp F24>; mods = <(MOD_LALT)>; }; 										  /*│*/
+/*│*/ ezalttab_r: ezalttab_r { compatible = "zmk,behavior-tri-state"; label = "ezat_r"; #binding-cells = <0>; /*│*/
+/*│*/ 		bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>; timeout-ms = <300>; };                                /*│*/
+/*│*/ ezalttab_l: ezalttab_l { compatible = "zmk,behavior-tri-state"; label = "ezat_l"; #binding-cells = <0>; /*│*/
+/*│*/ 		bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>; timeout-ms = <300>; };                            /*│*/
+/*│*/ deadenter: deadenter { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;                     /*│*/
+/*│*/ 		bindings = <&kp ENTER>, <&kp F24>; mods = <(MOD_LALT)>; };                                          /*│*/
 /*└─────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 /*┌─── game stuff ──────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
 /*│*/ gameXmt: gameX_mod_tap { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; /*│*/
