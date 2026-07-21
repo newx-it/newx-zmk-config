@@ -110,8 +110,10 @@
 /*│*/		tapping-term-ms = <150>; bindings = <&XXleft>, <&kp>; display-name = "XXleft mod-Tap"; }; 				   	/*│*/
 /*│*/ Xspacemt: Xspace_mod_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";  /*│*/
 /*│*/		tapping-term-ms = <150>; bindings = <&Xspace>, <&kp>; display-name = "Xspace mod-Tap"; };				   	/*│*/
-/*│*/ tabmt: tabmt { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";  			/*│*/
-/*│*/		tapping-term-ms = <150>; bindings = <&ezalttab>, <&kp>; display-name = "ezalttab modtap"; }; 			   	/*│*/
+/*│*/ tabmt_r: tabmt_r { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";  	  /*│*/
+/*│*/		tapping-term-ms = <150>; bindings = <&ezalttab_r>, <&kp>; display-name = "ezalttab_r modtap"; }; 			/*│*/
+/*│*/ tabmt_l: tabmt_l { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";  	  /*│*/
+/*│*/		tapping-term-ms = <150>; bindings = <&ezalttab_l>, <&kp>; display-name = "ezalttab_l modtap"; }; 			/*│*/
 /*│*/ slt: slt { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";					/*│*/
 /*│*/		tapping-term-ms = <200>; bindings = <&sl>, <&kp>; display-name = "sticky layer modtap"; };		 		    /*│*/			
 /*└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
