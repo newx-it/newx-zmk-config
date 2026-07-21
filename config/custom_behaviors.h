@@ -214,9 +214,9 @@
 /*└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 /*┌─── fun stuff ───────────────────────────────────────────────────────────────────────────────────────────────┐*/
 /*│*/ ezalttab_r: ezalttab_r { compatible = "zmk,behavior-tri-state"; label = "ezat_r"; #binding-cells = <0>; /*│*/
-/*│*/ 		bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>; timeout-ms = <300>; };                              /*│*/
+/*│*/ 		bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>; timeout-ms = <750>; };                              /*│*/
 /*│*/ ezalttab_l: ezalttab_l { compatible = "zmk,behavior-tri-state"; label = "ezat_l"; #binding-cells = <0>; /*│*/
-/*│*/ 		bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>; timeout-ms = <300>; };                          /*│*/
+/*│*/ 		bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>; timeout-ms = <750>; };                          /*│*/
 /*│*/ deadenter: deadenter { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;                     /*│*/
 /*│*/ 		bindings = <&kp ENTER>, <&kp F24>; mods = <(MOD_LALT)>; };                                        /*│*/
 /*└─────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
