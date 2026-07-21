@@ -194,8 +194,8 @@
 /*│*/ mage_h: mage_h { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp H>;					 /*│*/
 /*│*/		akt_up { trigger-keys = <UP>; max-prior-idle-ms = <300>; bindings = <&kp UP>; }; };								 /*│*/ 
 /*│*/		akt_dt_right { trigger-keys = <LC(LG(RIGHT)) LC(LG(LEFT))>; max-prior-idle-ms = <300>; bindings = <&kp LC(LG(RIGHT))>; }; }; /*│*/
-/*│*/ mage_s: mage_s { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&amt Z S>;				 /*│*/
-/*│*/		akt_down { trigger-keys = <DOWN>; max-prior-idle-ms = <300>; bindings = <&kp DOWN>; }; };						 /*│*/
+/*│ mage_s: mage_s { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&amt Z S>;				 │*/
+/*│		akt_down { trigger-keys = <DOWN>; max-prior-idle-ms = <300>; bindings = <&kp DOWN>; }; };						 │*/
 /*│*/ mage_n: mage_n { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp N>;					 /*│*/
 /*│*/		akt_right { trigger-keys = <RIGHT>; max-prior-idle-ms = <300>; bindings = <&kp RIGHT>; }; };					 /*│*/
 /*│*/ mage_w: mage_w { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp W>;					 /*│*/
