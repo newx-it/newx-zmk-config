@@ -139,7 +139,9 @@
 /*│*/ mage_u_tap: mage_u_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";         /*│*/
 /*│*/ 		tapping-term-ms = <175>; bindings = <&ue>, <&mage_u>; display-name = "mage-u-mod-Tap"; };						 /*│*/
 /*│*/ mage_rev: mage_rev { compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&key_repeat>;		 /*│*/
-/*│*/ 		akt_must { trigger-keys = <M>; bindings = <&ust>; };															 /*│*/
+/*│*/     akt_ax { trigger-keys = <A>; bindings = <&kp X>; };															 /*│*/
+/*│*/     akt_ox { trigger-keys = <O>; bindings = <&kp X>; };															 /*│*/
+/*│*/     akt_must { trigger-keys = <M>; bindings = <&ust>; };															 /*│*/
 /*│*/ 		akt_que { trigger-keys = <Q>; bindings = <&mage_eu>; };															 /*│*/
 /*│*/ 		akt_shift_home_del { trigger-keys = <BSPC>; bindings = < &shiftXdel HOME >; };									 /*│*/
 /*│*/ 		akt_shift_end_del { trigger-keys = <DEL>; bindings = < &shiftXdel END >; };										 /*│*/
