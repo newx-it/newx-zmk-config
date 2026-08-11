@@ -115,7 +115,9 @@
 /*│*/ tabmt_l: tabmt_l { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";  	    /*│*/
 /*│*/		tapping-term-ms = <150>; bindings = <&ezalttab_l>, <&kp>; display-name = "ezalttab_l modtap"; }; 			/*│*/
 /*│*/ slt: slt { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";					/*│*/
-/*│*/		tapping-term-ms = <200>; bindings = <&sl>, <&kp>; display-name = "sticky layer modtap"; };		 		    /*│*/			
+/*│*/		tapping-term-ms = <200>; bindings = <&sl>, <&kp>; display-name = "sticky layer modtap"; };		 		    /*│*/		
+/*│*/ smt: smt { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";					/*│*/
+/*│*/		tapping-term-ms = <200>; bindings = <&sk>, <&kp>; display-name = "sticky key modtap"; };		 		    /*│*/			
 /*└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 /*┌─── magic ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
 /*│*/ mage_tap: mage_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred";			 /*│*/
