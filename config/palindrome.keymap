@@ -105,13 +105,15 @@ combos
 	/*│*/ cbo_f11 { timeout-ms = <20>; key-positions = < 21 23 >; bindings = < &kp F11 >; layers = < 0 1 >; }; 	 	 /*│*/
 	/*└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 
-	/*┌─── window management ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
+	/*┌─── window/app management ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
 	/*│*/ cbo_alwaysontop	{ timeout-ms = <20>; key-positions = < 12 13 >; bindings = < &kp LC(LG(T))	   >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*│*/ cbo_textextractor { timeout-ms = <20>; key-positions = < 16 17 >; bindings = < &kp LC(LG(E))	   >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*│*/ cbo_dsktop_right  { timeout-ms = <20>; key-positions = < 3 7   >; bindings = < &kp LC(LG(RIGHT)) >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*│*/ cbo_dsktop_left	{ timeout-ms = <20>; key-positions = < 2 6   >; bindings = < &kp LC(LG(LEFT))  >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*│*/ cbo_tab_right	  	{ timeout-ms = <20>; key-positions = < 13 17 >; bindings = < &kp LC(TAB)	   >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
-	/*│*/ cbo_tab_left	  	{ timeout-ms = <20>; key-positions = < 12 16 >; bindings = < &kp LC(LS(TAB))   >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
+	/*│*/ cbo_tab_left	  	{ timeout-ms = <20>; key-positions = < 12 16 >; bindings = < &kp LS(LS(TAB))   >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
+	/*│*/ cbo_dc_down	  	{ timeout-ms = <20>; key-positions = < 11 18 >; bindings = < &kp LA(LS(UP))    >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
+	/*│*/ cbo_dc_up	  		{ timeout-ms = <20>; key-positions = < 12 17 >; bindings = < &kp LA(LS(DOWN))  >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 
 	/*┌─── game ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
