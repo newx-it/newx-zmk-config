@@ -44,7 +44,7 @@ three
     /*│*/ &kp LCTRL    /*│*/ &gameXmt Z Q /*│*/ &socd2 S /*│*/ &gameXmt C E /*│*/ &gameXmt V G /*│																				│*/ &none 	 /*│*/ &kp F2	  /*│*/ &kp F3	   /*│*/ &none /*│*/ &none /*│*/
     /*│*/ &gameXmt K H /*│*/ &gameXmt I J /*│*/ &none 	 /*│*/ &gameXmt Y X /*│*/ &kp SPACE    /*│																				│*/ &kp C_PP /*│*/ &none      /*│*/ &none	   /*│*/ &none /*│*/ &none /*│*/
 	/*└──────────────────┴──────────────────┴──────────────┴──────────────────┴──────────────────┘																				└──────────────┴────────────────┴────────────────┴───────────┴───────────┘*/
-	>; sensor-bindings = < &inc_dec_kp C_PREV C_NEXT &inc_dec_kp LEFT RIGHT >; };
+	>; sensor-bindings = < &inc_dec_kp C_PREV C_NEXT &inc_dec_kp LEFT RIGHT >; }; };
 
 /*────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────*/
 
@@ -112,8 +112,8 @@ combos
 	/*│*/ cbo_dsktop_left	{ timeout-ms = <20>; key-positions = < 2 6   >; bindings = < &kp LC(LG(LEFT))  >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*│*/ cbo_tab_right	  	{ timeout-ms = <20>; key-positions = < 13 17 >; bindings = < &kp LC(TAB)	   >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*│*/ cbo_tab_left	  	{ timeout-ms = <20>; key-positions = < 12 16 >; bindings = < &kp LC(LS(TAB))   >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
-	/*│*/ cbo_dc_down	  	{ timeout-ms = <20>; key-positions = < 11 18 >; bindings = < &kp LA(LS(UP))    >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
-	/*│*/ cbo_dc_up	  		{ timeout-ms = <20>; key-positions = < 12 17 >; bindings = < &kp LA(LS(DOWN))  >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
+	/*│*/ cbo_dc_down	  	{ timeout-ms = <20>; key-positions = < 11 18 >; bindings = < &kp LA(LS(DOWN))  >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
+	/*│*/ cbo_dc_up	  		{ timeout-ms = <20>; key-positions = < 12 17 >; bindings = < &kp LA(LS(UP))    >; layers = < 0 1 >; require-prior-idle-ms = <50>; }; /*│*/
 	/*└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘*/
 
 	/*┌─── game ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐*/
