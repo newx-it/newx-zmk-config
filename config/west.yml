@@ -29,7 +29,7 @@ manifest:
       remote: urob
       revision: main # set to same version as zmk above
     - name: zmk-adaptive-key
-      remote: r4zendev
+      remote: rzssh
       revision: skipmagic
     - name: zmk-unicode
       remote: urob
