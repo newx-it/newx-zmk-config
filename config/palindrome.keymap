@@ -48,7 +48,7 @@ three
 	{ display-name = "fps"; bindings = <
 	/*┌──────────────────┬──────────────────┬──────────────┬──────────────────┬──────────────────┐																				┌──────────────┬────────────────┬────────────────┬───────────┬───────────┐*/
 	/*│*/ &kp F 	   /*│*/ &socd A 	  /*│*/ &socd2 W /*│*/ &socd D		/*│*/ &gameXmt T R /*│																				│*/	&none 	 /*│*/ &kp C_PREV /*│*/ &kp C_NEXT /*│*/ &none /*│*/ &none /*│*/
-    /*│*/ &kp LCTRL    /*│*/ &gameXmt Z Q /*│*/ &socd2 S /*│*/ &gameXmt C E /*│*/ &gameXmt V G /*│																				│*/ &none 	 /*│*/ &kp F2	  /*│*/ &kp F3	   /*│*/ &none /*│*/ &none /*│*/
+    /*│*/ &kp LSHFT    /*│*/ &gameXmt Z Q /*│*/ &socd2 S /*│*/ &gameXmt C E /*│*/ &gameXmt V G /*│																				│*/ &none 	 /*│*/ &kp F2	  /*│*/ &kp F3	   /*│*/ &none /*│*/ &none /*│*/
     /*│*/ &gameXmt K H /*│*/ &gameXmt I J /*│*/ &none 	 /*│*/ &gameXmt Y X /*│*/ &kp SPACE    /*│																				│*/ &kp C_PP /*│*/ &none      /*│*/ &none	   /*│*/ &none /*│*/ &none /*│*/
 	/*└──────────────────┴──────────────────┴──────────────┴──────────────────┴──────────────────┘																				└──────────────┴────────────────┴────────────────┴───────────┴───────────┘*/
 	>; sensor-bindings = < &inc_dec_kp C_PREV C_NEXT &inc_dec_kp LEFT RIGHT >; }; };
